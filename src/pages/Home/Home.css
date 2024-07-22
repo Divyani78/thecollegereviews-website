@@ -1,0 +1,38 @@
+/* CSS Flexbox */
+.home {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .home-content {
+    display: flex;
+    max-width: 1200px;
+    gap: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .home-content {
+      flex-direction: column;
+    }
+  }
+  
+  /* CSS Grid */
+  .home {
+    display: grid;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .home-content {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 1fr 300px; /* Adjust the column widths as needed */
+    gap: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .home-content {
+      grid-template-columns: 1fr; /* Stack the columns on smaller screens */
+    }
+  }

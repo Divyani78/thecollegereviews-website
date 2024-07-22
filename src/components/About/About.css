@@ -1,0 +1,88 @@
+.about-page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.about-page-container .text-container {
+  height: 45vh;
+  background-color: #68442d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .transition-text {
+  color: white;
+  font-size: 8rem;
+  text-align: center;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.about-image {
+  height: 55vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.boxes-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.box {
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+  height: 800px;
+}
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  width: 100%;
+  height: 7em; /* Height for 2 lines of text */
+  transition: .5s ease;
+}
+
+.box:hover .box-overlay {
+  height: 100%;
+}
+
+.box-overlay p {
+  color: white;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  margin: 0;
+  line-height: 1.2em;
+  max-height: 2.4em; /* Show only 2 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  transition: max-height 0.5s ease, -webkit-line-clamp 0.5s ease;
+}
+
+.box:hover .box-overlay p {
+  top: 50%;
+  transform: translateY(-50%);
+  max-height: none;
+  -webkit-line-clamp: unset;
+}

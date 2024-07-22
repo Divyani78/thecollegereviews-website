@@ -1,0 +1,125 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1); /* Adjust the alpha value (0.3) to change transparency */
+  color: #fff;
+  padding: 2rem;
+  z-index: 3;
+  backdrop-filter: blur(5px); /* Add a blur effect */
+}
+
+.navbar-brand .brand-link {
+  margin-left: 40px;
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand .brand-link:hover {
+  color: #68442d;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+
+.nav-item {
+  margin-left: 4rem; /* Increase the left margin */
+  margin-right: 3rem; /* Increase the right margin */
+}
+  
+  .nav-link {
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #68442d;
+  }
+  
+  .nav-link:hover::before {
+    background-color: #68442d;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-search {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    transition: width 0.3s ease;
+    width: 0;
+    overflow: hidden;
+  }
+  
+  .show-search {
+    width: 400px;
+  }
+  
+  .search-input {
+    background-color: #68442d;
+    font-size:30px;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+  }
+  
+  .search-btn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 4rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-right: 4rem;
+  }
+  
+  .search-btn:hover {
+    color: #68442d;
+  }
+  
+  .navbar-auth {
+    display: flex;
+  }
+  
+  .auth-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 4rem;
+    transition: color 0.3s ease;
+  }
+  
+  .auth-link:hover {
+    color: #68442d;
+  }

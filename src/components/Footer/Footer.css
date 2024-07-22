@@ -1,0 +1,119 @@
+.content {
+    flex: 1 0 auto;
+    /* Adjust the value based on your footer height */
+  }
+  
+  .footer {
+    background-color: black;
+    height: 74rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100vw; /* Add this line to make the footer cover the entire width */
+    position: relative; /* Add this line to position the footer absolutely */
+    left: 50%; /* Add this line to position the footer absolutely */
+    right: 50%; /* Add this line to position the footer absolutely */
+    margin-left: -50vw; /* Add this line to position the footer absolutely */
+    margin-right: -50vw; /* Add this line to position the footer absolutely */
+  }
+  
+  .footer-left {
+    flex: 1;
+    margin-left: 8rem;
+  }
+  
+  .footer-left h3 {
+    color: #f5c4a4;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-left p {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-right {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .footer-left .footer-link,
+  .footer-right .footer-link {
+    text-decoration: none;
+  }
+  
+  .footer-right h3 {
+    color: #f5c4a4;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    margin-right: 35rem;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-left .footer-link:hover,
+  .footer-right .footer-link:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+  
+  .contact-info {
+    margin-bottom: 20rem;
+  }
+  
+  .contact-info p {
+    color: white;
+    margin-right: 5rem;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .contact-info a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .contact-info .email-address,
+  .contact-info .phone-number {
+    color: inherit;
+  }
+  
+  .contact-info a:hover .email-address,
+  .contact-info a:hover .phone-number {
+    color: #f5c4a4;
+  }
+  
+  .contact-info h2 {
+    margin-top: 3rem;
+    margin-right: 16rem;
+    font-size: 3rem;
+  }
+  
+  .contact-info i {
+    margin-right: 5px;
+  }
+  
+  .contact-info h4{
+    margin-top: 3rem;
+    margin-right: 7rem;
+    font-size: 3rem;
+  }
+  .contact-info  .email-icon{
+    color: blue;
+  }
+  .contact-info .youtube-icon {
+    color: red;
+  }
+  
+  .contact-info .youtube-channel-name {
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-info a:hover .youtube-channel-name {
+    color: #f5c4a4;
+  }

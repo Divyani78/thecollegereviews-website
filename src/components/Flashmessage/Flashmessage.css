@@ -1,0 +1,28 @@
+/* FlashMessage.css */
+
+.flash-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1000;
+    animation: fadeIn 0.5s, fadeOut 0.5s 4.5s;
+  }
+  
+  .custom {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
